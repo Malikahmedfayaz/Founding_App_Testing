@@ -15,9 +15,10 @@ Editorial Layouts: The Home screen utilizes a custom grid spanning logic to mix 
 Background Caching: Integrated Coil for image handling, utilizing a dual-caching strategy (Memory + Disk) to ensure smooth scrolling through large catalogs.
 Defensive UI: The "Add to Cart" button is dynamically bound to the inStock data point, providing clear, instant visual feedback for users.
 ⚖️ Trade-offs & Future Scaling
-Trade-off: To prioritize an offline-first experience, I implemented client-side filtering. While efficient for the current dataset, I recognize that scaling to 100,000+ items would require moving to a Paging 3 implementation with server-side search to maintain optimal memory management.
-Next Steps:
-Implement local database storage via Room for offline persistence.
-Add multi-select filter parameters for more granular discovery.
-Integrate automated UI/Unit tests to maintain stability during rapid development.
+The Trade-off
+To prioritize an offline-first experience, I implemented client-side filtering. While efficient for the current dataset, I recognize that scaling to 100,000+ items would require moving to a Paging 3 implementation with server-side search to maintain optimal memory management.
+Next Steps
+Offline Persistence: Implement local database storage via Room.
+Advanced Discovery: Add multi-select filter parameters for more granular user control.
+Stability: Integrate automated UI/Unit tests to maintain stability during rapid development.
 Built by Ahmed Fayaz — Senior Mobile Application Developer
